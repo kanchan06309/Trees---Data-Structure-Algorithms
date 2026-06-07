@@ -31,3 +31,4 @@ A tree is a non-linear, hierarchical data structure composed of collection of en
 
 ## Here are some of the Trees questions:
 - [Easy Level Questions](leetcode_solutions/easy/README.md)
+- Here, topics like Inorder, Preorder, Postorder, Height of tree, deapth of tree, and many more similar topics are covered in the form of questions with it's solution and deatailed explanation. Do check out this. 
