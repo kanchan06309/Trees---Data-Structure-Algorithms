@@ -28,3 +28,6 @@ A tree is a non-linear, hierarchical data structure composed of collection of en
 6) B-Tree: A self-balancing tree data structure commonly used in databases and file systems. It maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time.
 
 <img src="project-screenshot/image1.jpeg" alt="Home Page" width="500">
+
+## Here are some of the Trees questions:
+- [Easy Level Questions](leetcode_solutions/easy/README.md)
