@@ -8,14 +8,14 @@ This code performs an Inorder Traversal of a binary tree using recursion and ret
 Inorder Traversal - For every node, visit: Left → Root → Right.
 
 **Approach-**
-1. Create a list
-List<Integer> list = new ArrayList<>();
+1. Create a list - 
+`List<Integer> list = new ArrayList<>();` - 
 This list will store the inorder traversal result for the current subtree.
 
 2. Base Case
-if(root == null){
-    return list;
-}
+`if(root == null){`
+`    return list;`
+`}`
 If the tree/subtree is empty(null), return an empty list. This stops the recursion.
 
 3. Traverse Left Subtree
