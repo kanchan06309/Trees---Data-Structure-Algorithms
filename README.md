@@ -1,8 +1,8 @@
-# Trees - Data Structure & Algoritms
-- What are Trees?
+# Trees - Data Structure & Algorithms
+### What are Trees?
 A tree is a non-linear, hierarchical data structure composed of collection of entities called nodes that are connected by edges. 
 
-- Some of the core Terminologies of Trees
+### Some of the core Terminologies of Trees
 1) Root: The topmost node of the tree, which has no parent.
 2) Edge: The link or connection between a parent node and a child node.
 3) Parent: A node that is an immediate predecessor to another node.
@@ -14,7 +14,7 @@ A tree is a non-linear, hierarchical data structure composed of collection of en
 9) Ancestor: Any node on the path from the root to a given node (excluding the node itself).
 10) Level of a Node: The number of edges in the path from the root to that node (The root node is at level 0).
 
-- Some of the common Types of Trees
+### Some of the common Types of Trees
 1) General Tree: A tree with no restriction on the number of children per node.
 2) Binary Tree: Every node can have a maximum of two children, called the left and right child.
   - Full Binary Tree: Every node has either 0 or 2 children.
