@@ -29,6 +29,30 @@ class Solution {
         return list;
     }
 
+    //Solution 2: Binary Tree Preorder Traversal
+    public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+        if(root==null){
+            return list;
+        }
+        list.add(root.val);
+        list.addAll(preorderTraversal(root.left));
+        list.addAll(preorderTraversal(root.right));
+        return list;
+    }
+
+    //Solution 3: Binary Tree Postorder Traversal
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> list = new ArrayList<>();
+        if(root==null){
+            return list;
+        }
+        list.addAll(postorderTraversal(root.left));
+        list.addAll(postorderTraversal(root.right));
+        list.add(root.val);
+        return list;
+    }
+
     public static void main(String[] args) {
 
     }
