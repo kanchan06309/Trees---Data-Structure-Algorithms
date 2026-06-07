@@ -27,4 +27,5 @@ A tree is a non-linear, hierarchical data structure composed of collection of en
 5) Red-Black Tree: Another self-balancing BST that attaches a "red" or "black" color property bit to every single node. The color rules prevent the tree from becoming skewed during updates.
 6) B-Tree: A self-balancing tree data structure commonly used in databases and file systems. It maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time.
 
+![Home Page](project-screenshot/image1.png)
 
