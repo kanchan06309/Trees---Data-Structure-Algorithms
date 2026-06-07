@@ -12,11 +12,12 @@ Inorder Traversal - For every node, visit: Left → Root → Right.
 `List<Integer> list = new ArrayList<>();` - 
 This list will store the inorder traversal result for the current subtree.
 
-2. Base Case
-`if(root == null){`
-`    return list;`
-`}`
-If the tree/subtree is empty(null), return an empty list. This stops the recursion.
+2. Base Case - 
+```java 
+if(root == null){
+    return list;
+}
+``` - If the tree/subtree is empty(null), return an empty list. This stops the recursion.
 
 3. Traverse Left Subtree
 list.addAll(inorderTraversal(root.left));
