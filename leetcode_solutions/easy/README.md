@@ -8,16 +8,16 @@ This code performs an Inorder Traversal of a binary tree using recursion and ret
 Inorder Traversal - For every node, visit: Left → Root → Right.
 
 **Approach-**
-1. Create a list - 
-`List<Integer> list = new ArrayList<>();` - 
+```java
+1. Create a list 
+List<Integer> list = new ArrayList<>();
 This list will store the inorder traversal result for the current subtree.
 
 2. Base Case - 
-```java 
 if(root == null){
     return list;
 }
-``` - If the tree/subtree is empty(null), return an empty list. This stops the recursion.
+If the tree/subtree is empty(null), return an empty list. This stops the recursion.
 
 3. Traverse Left Subtree
 list.addAll(inorderTraversal(root.left));
@@ -34,3 +34,4 @@ Recursively get values from the right subtree and append them.
 6. Return Result
 return list;
 Return the inorder traversal of the current subtree.
+```
