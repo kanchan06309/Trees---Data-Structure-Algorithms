@@ -72,7 +72,6 @@ Recursively get values from the right subtree and append them.
 return list;
 Return the inorder traversal of the current subtree.
 ```
-
 ### Q-3) Given the root of a binary tree, return the Postorder traversal of its nodes' values.
 - [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/)
 - [Solution](solution.java)
@@ -110,4 +109,28 @@ Add the current node's value to the list.
 return list;
 Return the inorder traversal of the current subtree.
 ```
+### Q-4) Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
+- [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)
+- [Solution](solution.java)
 
+### Explanation:
+The idea is to perform a Breadth-First Search (BFS) using a queue. Since BFS processes nodes level by level, we can use the queue size to determine how many nodes belong to the current level. For each level, we remove all nodes currently in the queue, store their values in a list, and add their children to the queue for the next level. After processing a level, the list is added to the final answer. This ensures that nodes are visited from left to right and level by level.
+
+**Approach-**
+```java
+1. If the root is null, return an empty list.
+if (root == null) {
+            return result;
+        }
+
+2. Create a queue for BFS. Put the root node into a queue.
+Queue<TreeNode> queue = new LinkedList<>();
+queue.offer(root);
+
+3. While the queue is not empty [while (!queue.isEmpty())]:
+- Find the number of nodes in the current level (size = queue.size()).
+- Process exactly size nodes.
+- Store their values in a temporary list.
+- Add their left and right children to the queue.
+4. Add the temporary list to the answer.
+```
